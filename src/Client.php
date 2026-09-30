@@ -323,7 +323,7 @@ class Client
         return $this->barcodes;
     }
 
-    public function officesByCoordinates(): OfficesByPolygons
+    public function officesByPolygons(): OfficesByPolygons
     {
         if ($this->officesByPolygons === null) {
             $this->officesByPolygons = new OfficesByPolygons($this->http_client, $this->serializer);
